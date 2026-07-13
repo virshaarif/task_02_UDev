@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airplane Management System | Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-badge"><i class="bi bi-airplane-engines-fill"></i></div>
+                <div>
+                    <h1>SkyLine Airways</h1>
+                    <p>Airplane Management System</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a class="active" href="index.html"><i class="bi bi-speedometer2"></i>Home Dashboard</a>
+                <a href="ticket-management.html"><i class="bi bi-ticket-perforated"></i>Ticket Management</a>
+                <a href="departures.html"><i class="bi bi-airplane-departure"></i>Departures</a>
+                <a href="arrivals.html"><i class="bi bi-airplane-arrival"></i>Arrivals</a>
+            </nav>
+            <div class="sidebar-footer">
+                <strong>Operations Center</strong><br>
+                24/7 flight control, passenger records, and route monitoring.
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <header class="topbar">
+                <div class="topbar-inner">
+                    <div class="row align-items-center g-3">
+                        <div class="col-lg-4 col-md-12">
+                            <button class="btn btn-light border responsive-sidebar-toggle me-2" type="button">
+                                <i class="bi bi-list"></i>
+                            </button>
+                            <h2 class="page-title">Dashboard Overview</h2>
+                            <p class="page-subtitle">Monitor flights, passengers, bookings, and airport activity.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-7">
+                            <div class="search-box">
+                                <i class="bi bi-search"></i>
+                                <input type="text" placeholder="Search flights, tickets..." aria-label="Search">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5">
+                            <div class="action-icons">
+                                <a class="icon-pill" href="#" aria-label="Notifications"><i class="bi bi-bell"></i></a>
+                                <div class="user-chip">
+                                    <img alt="User profile" src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=120&q=80">
+                                    <div>
+                                        <strong>Admin User</strong>
+                                        <span>Airport Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="content-area">
+                <section class="hero-card mb-4">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-7">
+                            <h2>Welcome back to SkyLine Operations</h2>
+                            <p>Track today’s flight performance, booking trends, and airport movement from one professional control panel.</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="hero-stat">
+                                <i class="bi bi-calendar2-week"></i>
+                                <div>
+                                    <strong>Today’s Schedule</strong>
+                                    <span>18 departures • 16 arrivals • 4 delayed updates</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row g-4 mb-4">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="bi bi-airplane"></i></div>
+                            <h3>128</h3>
+                            <p>Total Flights</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="bi bi-people-fill"></i></div>
+                            <h3>12,450</h3>
+                            <p>Total Passengers</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="bi bi-shop-window"></i></div>
+                            <h3>4,820</h3>
+                            <p>Available Seats</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="bi bi-currency-dollar"></i></div>
+                            <h3>$86.4K</h3>
+                            <p>Total Revenue</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row g-4 mb-4">
+                    <div class="col-xl-5">
+                        <div class="section-card h-100">
+                            <div class="section-header">
+                                <h3>Flight Overview</h3>
+                                <a class="pill-link" href="departures.html">View Flights</a>
+                            </div>
+                            <div class="overview-list">
+                                <div class="overview-item">
+                                    <div>
+                                        <strong>Operational Flights</strong>
+                                        <span>Flights currently active in the network</span>
+                                    </div>
+                                    <div class="overview-value">94%</div>
+                                </div>
+                                <div class="overview-item">
+                                    <div>
+                                        <strong>On-Time Performance</strong>
+                                        <span>Average departure punctuality</span>
+                                    </div>
+                                    <div class="overview-value">87%</div>
+                                </div>
+                                <div class="overview-item">
+                                    <div>
+                                        <strong>Average Load Factor</strong>
+                                        <span>Seat occupancy across all routes</span>
+                                    </div>
+                                    <div class="overview-value">78%</div>
+                                </div>
+                                <div class="overview-item">
+                                    <div>
+                                        <strong>Active Gate Assignments</strong>
+                                        <span>Terminals currently in use</span>
+                                    </div>
+                                    <div class="overview-value">14</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="table-card h-100">
+                            <div class="section-header">
+                                <h3>Recent Bookings</h3>
+                                <a class="pill-link" href="ticket-management.html">Manage Tickets</a>
+                            </div>
+                            <div class="recent-bookings-scroll">
+                                <table class="table align-middle recent-bookings-table">
+                                    <colgroup>
+                                        <col style="width: 18%;">
+                                        <col style="width: 30%;">
+                                        <col style="width: 14%;">
+                                        <col style="width: 18%;">
+                                        <col style="width: 20%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>Ticket ID</th>
+                                            <th>Passenger</th>
+                                            <th>Flight</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#TK-2401</td>
+                                            <td>Sarah Johnson</td>
+                                            <td>SL-402</td>
+                                            <td>14 Jul 2026</td>
+                                            <td><span class="badge-status badge-confirmed"><i class="bi bi-check-circle"></i>Confirmed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#TK-2402</td>
+                                            <td>Ahmed Khan</td>
+                                            <td>SL-115</td>
+                                            <td>14 Jul 2026</td>
+                                            <td><span class="badge-status badge-pending"><i class="bi bi-clock-history"></i>Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#TK-2403</td>
+                                            <td>Emily Clark</td>
+                                            <td>SL-208</td>
+                                            <td>15 Jul 2026</td>
+                                            <td><span class="badge-status badge-cancelled"><i class="bi bi-x-circle"></i>Cancelled</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#TK-2401</td>
+                                            <td>Sarah Johnson</td>
+                                            <td>SL-402</td>
+                                            <td>14 Jul 2026</td>
+                                            <td><span class="badge-status badge-confirmed"><i class="bi bi-check-circle"></i>Confirmed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#TK-2402</td>
+                                            <td>Ahmed Khan</td>
+                                            <td>SL-115</td>
+                                            <td>14 Jul 2026</td>
+                                            <td><span class="badge-status badge-pending"><i class="bi bi-clock-history"></i>Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#TK-2403</td>
+                                            <td>Emily Clark</td>
+                                            <td>SL-208</td>
+                                            <td>15 Jul 2026</td>
+                                            <td><span class="badge-status badge-cancelled"><i class="bi bi-x-circle"></i>Cancelled</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-4">
+                    <div class="section-header">
+                        <h3>Recent Activity</h3>
+                        <a class="pill-link" href="arrivals.html">Check Arrivals</a>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="activity-card">
+                                <div class="activity-icon"><i class="bi bi-person-check-fill"></i></div>
+                                <div>
+                                    <h5>Passenger Check-in Completed</h5>
+                                    <p>Flight SL-402 processed 186 passengers at Terminal 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="activity-card">
+                                <div class="activity-icon"><i class="bi bi-airplane-engines-fill"></i></div>
+                                <div>
+                                    <h5>Gate Assignment Updated</h5>
+                                    <p>Departure SL-115 moved to Gate B7 for boarding clearance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="activity-card">
+                                <div class="activity-icon"><i class="bi bi-shield-check"></i></div>
+                                <div>
+                                    <h5>Security Clearance Approved</h5>
+                                    <p>All departure manifests verified for the evening route cluster.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer-panel">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-lg-4">
+                            <div class="footer-brand">
+                                <div class="footer-mark"><i class="bi bi-airplane-engines-fill"></i></div>
+                                <div>
+                                    <h4>SkyLine Airways</h4>
+                                    <p>Professional airline operations dashboard</p>
+                                </div>
+                            </div>
+                            <p class="footer-copy">Managing flights, passengers, and bookings with a clean, modern interface built for daily airline operations.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="footer-heading">Quick Links</h5>
+                            <div class="footer-links">
+                                <a href="index.html">Dashboard</a>
+                                <a href="ticket-management.html">Tickets</a>
+                                <a href="departures.html">Departures</a>
+                                <a href="arrivals.html">Arrivals</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="footer-heading">Connect With Us</h5>
+                            <p class="footer-note">Follow the latest updates and route activity across our airline network.</p>
+                            <div class="social-links footer-socials">
+                                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+                        <span>&copy; 2026 SkyLine Airways. All rights reserved.</span>
+                        <span>Built for a responsive university project portfolio.</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
