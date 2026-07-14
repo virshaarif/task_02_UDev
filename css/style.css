@@ -44,7 +44,7 @@ a {
 }
 
 .sidebar {
-    width: 290px;
+    width: 260px;
     background: linear-gradient(180deg, #0e3560 0%, #123d6b 45%, #0a2b4f 100%);
     color: #fff;
     position: fixed;
@@ -132,7 +132,7 @@ a {
 }
 
 .main-content {
-    margin-left: 290px;
+    margin-left: 280px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -204,6 +204,17 @@ a {
     place-items: center;
     color: var(--primary);
     box-shadow: 0 10px 25px rgba(15, 76, 129, 0.05);
+}
+
+/* Header notification hover: subtle lift, color and background change */
+.icon-pill {
+    transition: transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease, color 200ms ease;
+}
+.icon-pill:hover {
+    transform: translateY(-4px) scale(1.03);
+    background: linear-gradient(135deg, rgba(37,111,184,0.06), rgba(15,76,129,0.06));
+    box-shadow: 0 14px 30px rgba(15,76,129,0.08);
+    color: var(--primary-2);
 }
 
 .user-chip {
@@ -584,6 +595,10 @@ a {
     text-align: center;
 }
 
+.recent-bookings-table thead th:nth-child(5) {
+    text-align: center;
+}
+
 .badge-status {
     display: inline-flex;
     align-items: center;
@@ -672,9 +687,9 @@ a {
 }
 
 .footer-mark {
-    width: 48px;
-    height: 48px;
-    border-radius: 16px;
+    width: 65px;
+    height: 50px;
+    border-radius: 50%;
     display: grid;
     place-items: center;
     color: #fff;
@@ -703,7 +718,7 @@ a {
 }
 
 .footer-heading {
-    margin: 0 0 14px;
+    margin: 0 8px 14px;
     font-size: 1rem;
     font-weight: 800;
     color: var(--text);
@@ -767,6 +782,29 @@ a {
     display: grid;
     place-items: center;
     color: var(--primary);
+}
+
+/* Footer social icons hover: lift and color change */
+.social-links a {
+    transition: transform 220ms cubic-bezier(.2,.9,.2,1), background 220ms ease, box-shadow 220ms ease, color 220ms ease;
+}
+.social-links a:hover {
+    transform: translateY(-6px);
+    background: linear-gradient(135deg,#e6f5ff,#d7eefc);
+    box-shadow: 0 12px 28px rgba(37,111,184,0.08);
+    color: var(--primary-2);
+}
+
+/* Brand airplane icon float animation */
+.brand-badge i {
+    display: inline-block;
+    animation: plane-float 2.8s ease-in-out infinite;
+    transform-origin: center;
+}
+@keyframes plane-float {
+    0% { transform: translateY(0) rotate(-4deg); }
+    50% { transform: translateY(-7px) rotate(0deg); }
+    100% { transform: translateY(0) rotate(-4deg); }
 }
 
 .responsive-sidebar-toggle {
