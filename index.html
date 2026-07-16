@@ -23,11 +23,14 @@
                 <a href="ticket-management.html"><i class="bi bi-ticket-perforated"></i>Ticket Management</a>
                 <a href="departures.html"><i class="bi bi-arrow-up-right-circle"></i>Departures</a>
                 <a href="arrivals.html"><i class="bi bi-arrow-down-left-circle"></i>Arrivals</a>
+                <a href="in-flight-meals.html"><i class="bi bi-cup-hot"></i>In-Flight Meals</a>
+                <a href="baggage-information.html"><i class="bi bi-luggage"></i>Baggage Information</a>
+                <a href="book-ticket.html"><i class="bi bi-journal-bookmark"></i>Book Ticket</a>
             </nav>
-            <div class="sidebar-footer">
+            <!-- <div class="sidebar-footer">
                 <strong>Operations Center</strong><br>
                 24/7 flight control, passenger records, and route monitoring.
-            </div>
+            </div> -->
         </aside>
 
         <div class="main-content">
@@ -158,70 +161,68 @@
                                 <h3>Recent Bookings</h3>
                                 <a class="pill-link" href="ticket-management.html">Manage Tickets</a>
                             </div>
-                            <div class="recent-bookings-scroll">
-                                <table class="table align-middle recent-bookings-table">
-                                    <colgroup>
-                                        <col style="width: 18%;">
-                                        <col style="width: 30%;">
-                                        <col style="width: 14%;">
-                                        <col style="width: 18%;">
-                                        <col style="width: 20%;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>Ticket ID</th>
-                                            <th>Passenger</th>
-                                            <th>Flight</th>
-                                            <th>Date</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>#TK-2401</td>
-                                            <td>Sarah Johnson</td>
-                                            <td>SL-402</td>
-                                            <td>14 Jul 2026</td>
-                                            <td><span class="badge-status badge-confirmed"><i class="bi bi-check-circle"></i>Confirmed</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>#TK-2402</td>
-                                            <td>Ahmed Khan</td>
-                                            <td>SL-115</td>
-                                            <td>14 Jul 2026</td>
-                                            <td><span class="badge-status badge-pending"><i class="bi bi-clock-history"></i>Pending</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>#TK-2403</td>
-                                            <td>Emily Clark</td>
-                                            <td>SL-208</td>
-                                            <td>15 Jul 2026</td>
-                                            <td><span class="badge-status badge-cancelled"><i class="bi bi-x-circle"></i>Cancelled</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>#TK-2401</td>
-                                            <td>Sarah Johnson</td>
-                                            <td>SL-402</td>
-                                            <td>14 Jul 2026</td>
-                                            <td><span class="badge-status badge-confirmed"><i class="bi bi-check-circle"></i>Confirmed</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>#TK-2402</td>
-                                            <td>Ahmed Khan</td>
-                                            <td>SL-115</td>
-                                            <td>14 Jul 2026</td>
-                                            <td><span class="badge-status badge-pending"><i class="bi bi-clock-history"></i>Pending</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>#TK-2403</td>
-                                            <td>Emily Clark</td>
-                                            <td>SL-208</td>
-                                            <td>15 Jul 2026</td>
-                                            <td><span class="badge-status badge-cancelled"><i class="bi bi-x-circle"></i>Cancelled</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <table class="table align-middle recent-bookings-table">
+                                <colgroup>
+                                    <col style="width: 18%;">
+                                    <col style="width: 39%;">
+                                    <col style="width: 19%;">
+                                    <col style="width: 26%;">
+                                    <!-- <col style="width: 10%;"> -->
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Ticket ID</th>
+                                        <th>Passenger</th>
+                                        <th>Flight</th>
+                                        <th>Date</th>
+                                        <!-- <th>Status</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#2401</td>
+                                        <td>Sarah Johnson</td>
+                                        <td>SL-402</td>
+                                        <td>14 Jul 2026</td>
+                                        <!-- <td><span class="badge-status badge-confirmed"><i class="bi bi-check-circle"></i>Confirmed</span></td> -->
+                                    </tr>
+                                    <tr>
+                                        <td>#2402</td>
+                                        <td>Ahmed Khan</td>
+                                        <td>SL-115</td>
+                                        <td>14 Jul 2026</td>
+                                        <!-- <td><span class="badge-status badge-pending"><i class="bi bi-clock-history"></i>Pending</span></td> -->
+                                    </tr>
+                                    <tr>
+                                        <td>#2403</td>
+                                        <td>Emily Clark</td>
+                                        <td>SL-208</td>
+                                        <td>15 Jul 2026</td>
+                                        <!-- <td><span class="badge-status badge-cancelled"><i class="bi bi-x-circle"></i>Cancelled</span></td> -->
+                                    </tr>
+                                    <tr>
+                                        <td>#2401</td>
+                                        <td>Sarah Johnson</td>
+                                        <td>SL-402</td>
+                                        <td>14 Jul 2026</td>
+                                        <!-- <td><span class="badge-status badge-confirmed"><i class="bi bi-check-circle"></i>Confirmed</span></td> -->
+                                    </tr>
+                                    <tr>
+                                        <td>#2402</td>
+                                        <td>Ahmed Khan</td>
+                                        <td>SL-115</td>
+                                        <td>14 Jul 2026</td>
+                                        <!-- <td><span class="badge-status badge-pending"><i class="bi bi-clock-history"></i>Pending</span></td> -->
+                                    </tr>
+                                    <tr>
+                                        <td>#2403</td>
+                                        <td>Emily Clark</td>
+                                        <td>SL-208</td>
+                                        <td>15 Jul 2026</td>
+                                        <!-- <td><span class="badge-status badge-cancelled"><i class="bi bi-x-circle"></i>Cancelled</span></td> -->
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </section>
@@ -283,6 +284,9 @@
                                 <a href="ticket-management.html">Tickets</a>
                                 <a href="departures.html">Departures</a>
                                 <a href="arrivals.html">Arrivals</a>
+                                <a href="in-flight-meals.html">Meals</a>
+                                <a href="baggage-information.html">Baggage</a>
+                                <a href="book-ticket.html">Book Ticket</a>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -298,11 +302,12 @@
                     </div>
                     <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
                         <span>&copy; 2026 Airblue Airways. All rights reserved.</span>
-                        <span>Built for a responsive university project portfolio.</span>
+                        <span>Develop by Virsha Arif</span>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
+    <script src="js/site-layout.js"></script>
 </body>
 </html>

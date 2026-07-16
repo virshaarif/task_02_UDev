@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airplane Management System | In-Flight Meals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-badge"><i class="bi bi-airplane-engines-fill"></i></div>
+                <div>
+                    <h1>Airblue Airways</h1>
+                    <p>Airplane Management System</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html"><i class="bi bi-speedometer2"></i>Home Dashboard</a>
+                <a href="ticket-management.html"><i class="bi bi-ticket-perforated"></i>Ticket Management</a>
+                <a href="departures.html"><i class="bi bi-arrow-up-right-circle"></i>Departures</a>
+                <a href="arrivals.html"><i class="bi bi-arrow-down-left-circle"></i>Arrivals</a>
+                <a class="active" href="in-flight-meals.html"><i class="bi bi-cup-hot"></i>In-Flight Meals</a>
+                <a href="baggage-information.html"><i class="bi bi-luggage"></i>Baggage Information</a>
+                <a href="book-ticket.html"><i class="bi bi-journal-bookmark"></i>Book Ticket</a>
+            </nav>
+            <!-- <div class="sidebar-footer">
+                <strong>Operations Center</strong><br>
+                24/7 flight control, passenger records, and route monitoring.
+            </div> -->
+        </aside>
+
+        <div class="main-content">
+            <header class="topbar">
+                <div class="topbar-inner">
+                    <div class="row align-items-center g-3">
+                        <div class="col-lg-4 col-md-12">
+                            <button class="btn btn-light border responsive-sidebar-toggle me-2" type="button">
+                                <i class="bi bi-list"></i>
+                            </button>
+                            <h2 class="page-title">In-Flight Meals</h2>
+                            <p class="page-subtitle">Browse lunch and beverage options available during the flight.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-7">
+                            <div class="search-box">
+                                <i class="bi bi-search"></i>
+                                <input type="text" placeholder="Search meals..." aria-label="Search meals">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5">
+                            <div class="action-icons">
+                                <a class="icon-pill" href="#" aria-label="Notifications"><i class="bi bi-bell"></i></a>
+                                <div class="user-chip">
+                                    <img alt="User profile" src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=120&q=80">
+                                    <div>
+                                        <strong>Admin User</strong>
+                                        <span>Catering Services</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="content-area">
+                <section class="section-card meal-section-card">
+                    <div class="section-header">
+                        <h3>Lunch Menu</h3>
+                        <span class="pill-link">USD Pricing</span>
+                    </div>
+                    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                        <div class="col d-flex">
+                            <div class="meal-card w-100 h-100">
+                                <img class="meal-image" alt="Chicken Biryani" src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=900&q=80">
+                                <div class="meal-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                        <div>
+                                            <h4>Chicken Biryani</h4>
+                                            <p>Fragrant rice with tender chicken and signature spices.</p>
+                                        </div>
+                                        <span class="badge-status badge-confirmed">$15</span>
+                                    </div>
+                                    <div class="meal-meta-row">
+                                        <span class="badge text-bg-light meal-meta-badge">Non-Vegetarian</span>
+                                        <span class="badge-status badge-active"><i class="bi bi-check-circle"></i>Available</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="meal-card w-100 h-100">
+                                <img class="meal-image" alt="Grilled Chicken" src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=80">
+                                <div class="meal-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                        <div>
+                                            <h4>Grilled Chicken</h4>
+                                            <p>Juicy grilled chicken served with roasted vegetables.</p>
+                                        </div>
+                                        <span class="badge-status badge-confirmed">$18</span>
+                                    </div>
+                                    <div class="meal-meta-row">
+                                        <span class="badge text-bg-light meal-meta-badge">Non-Vegetarian</span>
+                                        <span class="badge-status badge-active"><i class="bi bi-check-circle"></i>Available</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="meal-card w-100 h-100">
+                                <img class="meal-image" alt="Veg Pasta" src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80">
+                                <div class="meal-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                        <div>
+                                            <h4>Veg Pasta</h4>
+                                            <p>Creamy pasta with seasonal vegetables and herbs.</p>
+                                        </div>
+                                        <span class="badge-status badge-confirmed">$12</span>
+                                    </div>
+                                    <div class="meal-meta-row">
+                                        <span class="badge text-bg-light meal-meta-badge">Vegetarian</span>
+                                        <span class="badge-status badge-active"><i class="bi bi-check-circle"></i>Available</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="meal-card w-100 h-100">
+                                <img class="meal-image" alt="Club Sandwich" src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=80">
+                                <div class="meal-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                        <div>
+                                            <h4>Club Sandwich</h4>
+                                            <p>Freshly prepared sandwich with crisp vegetables and cheese.</p>
+                                        </div>
+                                        <span class="badge-status badge-confirmed">$10</span>
+                                    </div>
+                                    <div class="meal-meta-row">
+                                        <span class="badge text-bg-light meal-meta-badge">Vegetarian</span>
+                                        <span class="badge-status badge-active"><i class="bi bi-check-circle"></i>Available</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="meal-card w-100 h-100">
+                                <img class="meal-image" alt="Fresh Salad" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80">
+                                <div class="meal-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                        <div>
+                                            <h4>Fresh Salad</h4>
+                                            <p>Light salad bowl with greens, tomatoes, and dressing.</p>
+                                        </div>
+                                        <span class="badge-status badge-confirmed">$8</span>
+                                    </div>
+                                    <div class="meal-meta-row">
+                                        <span class="badge text-bg-light meal-meta-badge">Vegan</span>
+                                        <span class="badge-status badge-active"><i class="bi bi-check-circle"></i>Available</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="meal-card w-100 h-100">
+                                <img class="meal-image" alt="Juice Combo" src="https://images.unsplash.com/photo-1502741224143-90386d7f8c82?auto=format&fit=crop&w=900&q=80">
+                                <div class="meal-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                        <div>
+                                            <h4>Juice Combo</h4>
+                                            <p>Refreshing mixed juices served with a light snack.</p>
+                                        </div>
+                                        <span class="badge-status badge-confirmed">$6</span>
+                                    </div>
+                                    <div class="meal-meta-row">
+                                        <span class="badge text-bg-light meal-meta-badge">Vegan</span>
+                                        <span class="badge-status badge-active"><i class="bi bi-check-circle"></i>Available</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer-panel">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-lg-4">
+                            <div class="footer-brand">
+                                <div class="footer-mark"><i class="bi bi-airplane-engines-fill"></i></div>
+                                <div>
+                                    <h4>Airblue Airways</h4>
+                                    <p>Professional airline operations dashboard</p>
+                                </div>
+                            </div>
+                            <p class="footer-copy">Managing flights, passengers, and bookings with a clean, modern interface built for daily airline operations.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="footer-heading">Quick Links</h5>
+                            <div class="footer-links">
+                                <a href="index.html">Dashboard</a>
+                                <a href="ticket-management.html">Tickets</a>
+                                <a href="departures.html">Departures</a>
+                                <a href="arrivals.html">Arrivals</a>
+                                <a href="in-flight-meals.html">Meals</a>
+                                <a href="baggage-information.html">Baggage</a>
+                                <a href="book-ticket.html">Book Ticket</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="footer-heading">Connect With Us</h5>
+                            <p class="footer-note">Follow the latest updates and route activity across our airline network.</p>
+                            <div class="social-links footer-socials">
+                                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+                        <span>&copy; 2026 Airblue Airways. All rights reserved.</span>
+                        <span>Built for a responsive university project portfolio.</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/site-layout.js"></script>
+</body>
+</html>

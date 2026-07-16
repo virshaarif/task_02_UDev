@@ -21,13 +21,16 @@
             <nav class="sidebar-nav">
                 <a href="index.html"><i class="bi bi-speedometer2"></i>Home Dashboard</a>
                 <a class="active" href="ticket-management.html"><i class="bi bi-ticket-perforated"></i>Ticket Management</a>
-                <a href="departures.html"><i class="bi bi-airplane-departure"></i>Departures</a>
-                <a href="arrivals.html"><i class="bi bi-airplane-arrival"></i>Arrivals</a>
+                 <a href="departures.html"><i class="bi bi-arrow-up-right-circle"></i>Departures</a>
+                <a href="arrivals.html"><i class="bi bi-arrow-down-left-circle"></i>Arrivals</a>
+                <a href="in-flight-meals.html"><i class="bi bi-cup-hot"></i>In-Flight Meals</a>
+                <a href="baggage-information.html"><i class="bi bi-luggage"></i>Baggage Information</a>
+                <a href="book-ticket.html"><i class="bi bi-journal-bookmark"></i>Book Ticket</a>
             </nav>
-            <div class="sidebar-footer">
+            <!-- <div class="sidebar-footer">
                 <strong>Operations Center</strong><br>
                 24/7 flight control, passenger records, and route monitoring.
-            </div>
+            </div> -->
         </aside>
 
         <div class="main-content">
@@ -69,104 +72,112 @@
                         <h3>Ticket Records</h3>
                         <a class="pill-link" href="index.html">Back to Dashboard</a>
                     </div>
-                    <div class="table-responsive">
-                        <table class="table align-middle">
+                        <table class="table align-middle ticket-table">
+                            <colgroup>
+                                <col style="width: 11%;">
+                                <col style="width: 18%;">
+                                <col style="width: 13%;">
+                                <col style="width: 12%;">
+                                <col style="width: 13%;">
+                                <col style="width: 14%;">
+                                <col style="width: 15%;">
+                                <!-- <col style="width: 12%;"> -->
+                            </colgroup>
                             <thead>
                                 <tr>
                                     <th>Ticket ID</th>
                                     <th>Passenger Name</th>
-                                    <th>Flight Number</th>
+                                    <th>Flight No</th>
                                     <th>Departure</th>
                                     <th>Destination</th>
                                     <th>Date</th>
                                     <th>Ticket Status</th>
-                                    <th>Action</th>
+                                    <!-- <th>Action</th> -->
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>#TK-2401</td>
+                                    <td>#2401</td>
                                     <td>Sarah Johnson</td>
                                     <td>SL-402</td>
                                     <td>Dubai</td>
                                     <td>London</td>
                                     <td>14 Jul 2026</td>
                                     <td><span class="badge-status badge-confirmed"><i class="bi bi-check-circle"></i>Confirmed</span></td>
-                                    <td>
+                                    <!-- <td>
                                         <div class="action-group">
                                             <a class="action-btn action-view" href="#" aria-label="View"><i class="bi bi-eye"></i></a>
                                             <a class="action-btn action-edit" href="#" aria-label="Edit"><i class="bi bi-pencil"></i></a>
                                             <a class="action-btn action-delete" href="#" aria-label="Delete"><i class="bi bi-trash"></i></a>
                                         </div>
-                                    </td>
+                                    </td> -->
                                 </tr>
                                 <tr>
-                                    <td>#TK-2402</td>
+                                    <td>#2402</td>
                                     <td>Ahmed Khan</td>
                                     <td>SL-115</td>
                                     <td>Karachi</td>
                                     <td>Doha</td>
                                     <td>14 Jul 2026</td>
                                     <td><span class="badge-status badge-pending"><i class="bi bi-clock-history"></i>Pending</span></td>
-                                    <td>
+                                    <!-- <td>
                                         <div class="action-group">
                                             <a class="action-btn action-view" href="#" aria-label="View"><i class="bi bi-eye"></i></a>
                                             <a class="action-btn action-edit" href="#" aria-label="Edit"><i class="bi bi-pencil"></i></a>
                                             <a class="action-btn action-delete" href="#" aria-label="Delete"><i class="bi bi-trash"></i></a>
                                         </div>
-                                    </td>
+                                    </td> -->
                                 </tr>
                                 <tr>
-                                    <td>#TK-2403</td>
+                                    <td>#2403</td>
                                     <td>Emily Clark</td>
                                     <td>SL-208</td>
                                     <td>Toronto</td>
                                     <td>New York</td>
                                     <td>15 Jul 2026</td>
                                     <td><span class="badge-status badge-cancelled"><i class="bi bi-x-circle"></i>Cancelled</span></td>
-                                    <td>
+                                    <!-- <td>
                                         <div class="action-group">
                                             <a class="action-btn action-view" href="#" aria-label="View"><i class="bi bi-eye"></i></a>
                                             <a class="action-btn action-edit" href="#" aria-label="Edit"><i class="bi bi-pencil"></i></a>
                                             <a class="action-btn action-delete" href="#" aria-label="Delete"><i class="bi bi-trash"></i></a>
                                         </div>
-                                    </td>
+                                    </td> -->
                                 </tr>
                                 <tr>
-                                    <td>#TK-2404</td>
+                                    <td>#2404</td>
                                     <td>Omar Ali</td>
                                     <td>SL-510</td>
                                     <td>Istanbul</td>
                                     <td>Paris</td>
                                     <td>15 Jul 2026</td>
                                     <td><span class="badge-status badge-confirmed"><i class="bi bi-check-circle"></i>Confirmed</span></td>
-                                    <td>
+                                    <!-- <td>
                                         <div class="action-group">
                                             <a class="action-btn action-view" href="#" aria-label="View"><i class="bi bi-eye"></i></a>
                                             <a class="action-btn action-edit" href="#" aria-label="Edit"><i class="bi bi-pencil"></i></a>
                                             <a class="action-btn action-delete" href="#" aria-label="Delete"><i class="bi bi-trash"></i></a>
                                         </div>
-                                    </td>
+                                    </td> -->
                                 </tr>
                                 <tr>
-                                    <td>#TK-2405</td>
+                                    <td>#2405</td>
                                     <td>Nadia Hassan</td>
                                     <td>SL-774</td>
                                     <td>Riyadh</td>
                                     <td>Singapore</td>
                                     <td>16 Jul 2026</td>
                                     <td><span class="badge-status badge-pending"><i class="bi bi-clock-history"></i>Pending</span></td>
-                                    <td>
+                                    <!-- <td>
                                         <div class="action-group">
                                             <a class="action-btn action-view" href="#" aria-label="View"><i class="bi bi-eye"></i></a>
                                             <a class="action-btn action-edit" href="#" aria-label="Edit"><i class="bi bi-pencil"></i></a>
                                             <a class="action-btn action-delete" href="#" aria-label="Delete"><i class="bi bi-trash"></i></a>
                                         </div>
-                                    </td>
+                                    </td> -->
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
                 </section>
             </main>
 
@@ -190,6 +201,9 @@
                                 <a href="ticket-management.html">Tickets</a>
                                 <a href="departures.html">Departures</a>
                                 <a href="arrivals.html">Arrivals</a>
+                                <a href="in-flight-meals.html">Meals</a>
+                                <a href="baggage-information.html">Baggage</a>
+                                <a href="book-ticket.html">Book Ticket</a>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -211,5 +225,6 @@
             </footer>
         </div>
     </div>
+    <script src="js/site-layout.js"></script>
 </body>
 </html>
